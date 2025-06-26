@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Interactive Registration Form</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Register</h1>
+    <form id="registration-form" novalidate>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" minlength="5" required>
+        <span class="error-message" id="username-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error-message" id="email-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+        <small>Password must be at least 8 characters long, include an uppercase letter, a lowercase letter, and a number.</small>
+        <span class="error-message" id="password-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <span class="error-message" id="confirm-password-error"></span>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
